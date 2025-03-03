@@ -6,9 +6,8 @@ prompt=input("Enter your Prompt: ")
 
 client = Client(
   host='http://localhost:11434',
-  headers={'x-some-header': 'some-value'}
 )
-stream = client.chat(model='deepseek-r1', messages=[
+stream = client.chat(model='gemma2:2b', messages=[
   {
     'role': 'user',
     'content': prompt,
